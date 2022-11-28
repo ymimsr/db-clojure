@@ -1,6 +1,6 @@
 (ns ru.nsu.fit.task-1.task-1)
 
-;; returns an alphabet without letters that are present in given word
+;; returns a sub-alphabet without letters that are present in given word
 (defn get-sub-alphabet
   [word, alphabet]
   (remove
@@ -8,7 +8,7 @@
     alphabet)
   )
 
-;; returns a list with new words from given word
+;; returns a list of words formed by concatenating each letter from sub-alphabet with given word
 (defn get-new-words
   [word, alphabet]
   (map
