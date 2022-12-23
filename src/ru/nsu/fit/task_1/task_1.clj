@@ -26,4 +26,4 @@
   )
 
 
-(println (get-words 4 (list "a" "b" "c" "d")))
+(println (get-words 3 (list "a" "b" "c")))

@@ -25,15 +25,3 @@
   )
 
 (println (take 100000 primes))
-
-;; primeFactor = Map.Empty
-;; for q in (wheel2357):
-;;  p = primeFactor.pop(q)
-;;  if p is None:
-;;    yield q
-;;    primeFactor.add(q * q, q)
-;;  else
-;;    x = p + q
-;;    while x in primeFactor:
-;;      x += p
-;;    primeFactor.add(x, p)
