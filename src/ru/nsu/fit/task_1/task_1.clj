@@ -12,8 +12,8 @@
 (defn get-new-words
   [word, alphabet]
   (map
-    (fn [x] (str word x))
-    (get-sub-alphabet word alphabet))
+    #(str word %)
+    (filter #(not (.endsWith word %)) alphabet))
   )
 
 
@@ -26,4 +26,4 @@
   )
 
 
-(println (get-words 3 (list "a" "b" "c")))
+(println (get-words 4 (list "a" "b" "c")))
